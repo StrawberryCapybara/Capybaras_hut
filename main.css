@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* site arrumado para mobile */
+@media screen and (max-width: 640px) {
+
+    body {
+        background-color:black;
+    }
+
+    header,
+    footer {
+        padding: 32px;
+        border: 1px solid red;
+    }
+
+    header .container, 
+    footer .container  {
+        display: block;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    .container,
+    .produtos,
+    .sorry {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container h1{
+        margin-bottom: 16px;
+        font-family: "Sixtyfour Convergence", sans-serif;
+        text-transform: uppercase;  
+    }
+    
+    header nav li {
+        display: inline-flex;
+        margin-left: 16px;
+    }
+
+    header nav li a {
+        text-decoration: none;
+    }
+
+    section {
+        padding: 24px 0;
+    }
+
+    section .about {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section h2,
+    h3 {
+        font-family:"Rubik Gemstones", system-ui;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    section .container{
+        align-items: flex-start;
+    }
+
+    section .container h2 {
+        margin-bottom: 16px;
+    }
+
+    section .container img {
+        height: 240px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+    }
+
+    .produtos img {
+        margin-top: 16px;
+    }
+
+    section h2 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 16px;
+    }
+
+    section ul {
+        text-align: center;
+        list-style: none;
+    }
+
+    p,
+    a,
+    strong {
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+
+    section ul li img {
+        padding-left: 8px;
+    }
+
+    button {
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 16px;
+        width: 100%;
+        padding: 8px;
+        background-color: green;
+        color: white;
+    }
+
+    footer .container ul {
+        display: inline-flex;
+        list-style: none;
+    }
+
+    footer .container ul li {
+        margin-top: 16px;
+        margin-left: 40px;
+    }
+
+    footer .container ul li img {
+        height: 40px;
+    }
+
+    .sorry h1 {
+        color: white;
+        padding: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .sorry img {
+        height: 240px;
+    }
+}
+
+/* Site arrumado para tablets*/
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    body {
+        background-color:black;
+    }
+
+    header,
+    footer {
+        padding: 32px;
+        border: 1px solid red;
+    }
+
+    header .container, 
+    footer .container,
+    footer .container ul {
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    .container,
+    .produtos,
+    .sorry {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container h1{
+        font-family: "Sixtyfour Convergence", sans-serif;
+        text-transform: uppercase;
+    }
+    
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+    }
+
+    header nav li a {
+        text-decoration: none;
+    }
+
+    section {
+        padding: 24px 0;
+    }
+
+    section .about {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about p {
+        align-content: center;
+    }
+
+    section h2,
+    h3 {
+        font-family:"Rubik Gemstones", system-ui;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    section .container{
+        align-items: flex-start;
+    }
+
+    section .container h2 {
+        padding-bottom: 16px;
+    }
+
+    section .container img {
+        margin-right: 32px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        column-gap: 4%;
+    }
+
+    .produtos img {
+        margin-top: 16px;
+    }
+
+    section h2 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 16px;
+    }
+
+    section ul {
+        text-align: center;
+        list-style: none;
+    }
+
+    p,
+    a,
+    strong {
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+
+    section ul li img {
+        padding-left: 8px;
+    }
+
+    button {
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 16px;
+        width: 100%;
+        padding: 8px;
+        background-color: green;
+        color: white;
+    }
+
+    footer .container ul {
+        list-style: none;
+    }
+
+    footer .container ul li {
+        margin-left: 32px;
+    }
+
+    footer .container ul li img {
+        height: 50px;
+    }
+
+    .sorry h1 {
+        color: white;
+        padding: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .sorry img {
+        height: 550px;
+    }
+}
+
+/* site arrumado para desktops*/
+@media screen and (min-width: 1024px) {
+
+    body {
+        background-color:black;
+    }
+
+    header,
+    footer {
+        padding: 32px;
+        border: 1px solid red;
+    }
+
+    header .container, 
+    section .container,
+    footer .container,
+    footer .container ul {
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+    .container,
+    .produtos,
+    .sorry {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container h1{
+        font-family: "Sixtyfour Convergence", sans-serif;
+        text-transform: uppercase;
+    }
+    header nav li {
+        display: inline;
+        margin-left: 16px;
+    }
+
+    header nav li a {
+        text-decoration: none;
+    }
+
+    section {
+        padding: 24px 0;
+    }
+
+    section h2,
+    h3 {
+        font-family:"Rubik Gemstones", system-ui;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    section .container{
+        align-items: flex-start;
+    }
+
+    section .container h2 {
+        padding-bottom: 16px;
+    }
+
+    section .container img {
+        margin-right: 32px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(4, 24.5%);
+        column-gap: 1%;
+    }
+
+    section h2 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 16px;
+
+    }
+
+    section ul {
+        text-align: center;
+        list-style: none;
+    }
+
+    p,
+    a,
+    strong {
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+
+    section ul li img {
+        padding-left: 8px;
+    }
+
+    button {
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 16px;
+        width: 100%;
+        padding: 8px;
+        background-color: red;
+        color: white;
+    }
+
+    button:hover {
+        color: white;
+        background-color: green;
+    }
+
+    footer .container ul {
+        list-style: none;
+    }
+
+    footer .container ul li {
+        margin-left: 32px;
+    }
+
+    footer .container ul li img {
+        height: 50px;
+    }
+
+    .sorry h1 {
+        color: white;
+        padding: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+}
